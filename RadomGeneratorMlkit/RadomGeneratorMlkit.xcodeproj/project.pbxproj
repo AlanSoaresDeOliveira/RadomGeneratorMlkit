@@ -3,17 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1488849D26D697E600EF6AB3 /* RadomGeneratorMlkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1488849B26D697E600EF6AB3 /* RadomGeneratorMlkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148884A426D69D6600EF6AB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148884A326D69D6600EF6AB3 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1488849826D697E600EF6AB3 /* RadomGeneratorMlkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RadomGeneratorMlkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1488849B26D697E600EF6AB3 /* RadomGeneratorMlkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadomGeneratorMlkit.h; sourceTree = "<group>"; };
 		1488849C26D697E600EF6AB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		148884A326D69D6600EF6AB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			children = (
 				1488849A26D697E600EF6AB3 /* RadomGeneratorMlkit */,
 				1488849926D697E600EF6AB3 /* Products */,
+				C80105C0FB09D8D3E0E724F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +51,16 @@
 			children = (
 				1488849B26D697E600EF6AB3 /* RadomGeneratorMlkit.h */,
 				1488849C26D697E600EF6AB3 /* Info.plist */,
+				148884A326D69D6600EF6AB3 /* ViewController.swift */,
 			);
 			path = RadomGeneratorMlkit;
+			sourceTree = "<group>";
+		};
+		C80105C0FB09D8D3E0E724F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +105,7 @@
 				TargetAttributes = {
 					1488849726D697E600EF6AB3 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148884A426D69D6600EF6AB3 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		148884A126D697E600EF6AB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HD777GC7QY;
@@ -279,6 +293,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +302,7 @@
 		148884A226D697E600EF6AB3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HD777GC7QY;
